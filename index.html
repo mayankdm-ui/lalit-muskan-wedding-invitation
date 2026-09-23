@@ -1,0 +1,189 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#F4E6EC">
+  <meta name="description" content="Lalit & Muskan — Wedding Invitation">
+  <title>Lalit & Muskan | Wedding Invitation</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inknut+Antiqua:wght@400;500;600&family=Italianno&family=Judson:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="intro-locked">
+  <div class="envelope-intro" id="envelopeIntro" role="dialog" aria-modal="true" aria-label="Open wedding invitation">
+    <button class="envelope-button" id="envelopeButton" type="button" aria-label="Tap to start the wedding invitation">
+      <video id="envelopeVideo" class="envelope-video" playsinline preload="auto">
+        <source src="assets/Video Project 7.mp4" type="video/mp4">
+      </video>
+      <span class="envelope-glow" aria-hidden="true"></span>
+    </button>
+  </div>
+
+  <main class="invite" id="top">
+    <section class="hero reveal-section" aria-label="Wedding invitation cover">
+      <img class="hero-art" src="assets/hero-section.png" alt="Lalit and Muskan wedding invitation cover">
+      <a class="hero-scroll" href="#blessings" aria-label="Scroll to invitation details"><span>↓</span></a>
+      <button class="sound-toggle" id="soundToggle" type="button" aria-label="Turn sound on" aria-pressed="false">
+        <img id="soundIcon" src="assets/Sound-off.png" alt="">
+      </button>
+      <audio id="weddingAudio" loop preload="auto" src="assets/a-thousand-years-1-58028.mp3"></audio>
+    </section>
+
+    <section class="blessings section reveal-section" id="blessings">
+      <div class="white-card blessings-card">
+        <img src="assets/ganesh-card.png" alt="Divine blessings and wedding invitation details">
+      </div>
+    </section>
+
+    <section class="scratch-section section reveal-section" id="save-the-date">
+      <div class="white-card scratch-card" id="scratchCard">
+        <p class="eyebrow">SAVE THE DATE</p>
+        <h2>Reveal Our<br>Big Day</h2>
+        <p class="scratch-note">Scratch the hearts to reveal</p>
+        <div class="scratch-hearts" aria-label="Scratch all three hearts to reveal the countdown">
+          <div class="scratch-heart"><canvas aria-label="Scratch heart one"></canvas></div>
+          <div class="scratch-heart"><canvas aria-label="Scratch heart two"></canvas></div>
+          <div class="scratch-heart"><canvas aria-label="Scratch heart three"></canvas></div>
+        </div>
+        <p class="scratch-status" id="scratchStatus">0 / 3 revealed</p>
+      </div>
+
+      <div class="reveal-countdown reveal-art-card" id="revealCountdown" aria-live="polite" hidden>
+        <div class="reveal-art-wrap">
+          <img src="assets/Countdown Revel.png" alt="Save the Date — Revel Our Big Day — 20 Nov 2026" class="reveal-art">
+          <div class="live-countdown" id="countdown" aria-label="Live countdown to the wedding">
+            <div class="live-unit"><strong id="days">00</strong></div>
+            <div class="live-unit"><strong id="hours">00</strong></div>
+            <div class="live-unit"><strong id="minutes">00</strong></div>
+            <div class="live-unit"><strong id="seconds">00</strong></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="ceremonies section reveal-section" id="ceremonies">
+      <div class="section-heading">
+        <p class="eyebrow">THE CELEBRATION UNFOLDS</p>
+        <h2>Five Sacred<br>Ceremony</h2>
+        <img class="divider" src="assets/Divider.png" alt="">
+      </div>
+
+      <article class="event-block">
+        <p class="event-date">19th NOV 2026</p>
+        <h3>Threads of Traditional</h3>
+        <img class="event-art" src="assets/Threads of Traditional.png" alt="Threads of Traditional ceremony">
+      </article>
+      <article class="event-block">
+        <p class="event-date">19th NOV 2026</p>
+        <h3>The Glam Jam</h3>
+        <img class="event-art" src="assets/The glam Jam.png" alt="The Glam Jam ceremony">
+      </article>
+      <article class="event-block">
+        <p class="event-date">20th NOV 2026</p>
+        <h3>The Floral Affair</h3>
+        <img class="event-art" src="assets/The floral affair.png" alt="The Floral Affair ceremony">
+      </article>
+      <article class="event-block">
+        <p class="event-date">20th NOV 2026</p>
+        <h3>The Royal Affair</h3>
+        <img class="event-art" src="assets/A royal affair.png" alt="The Royal Affair ceremony">
+      </article>
+      <article class="event-block">
+        <p class="event-date">20th NOV 2026</p>
+        <h3>Happily Ever After</h3>
+        <img class="event-art" src="assets/Happily ever after.png" alt="Happily Ever After celebration">
+      </article>
+    </section>
+
+    <section class="venue section reveal-section" id="venue">
+      <div class="section-heading">
+        <p class="eyebrow">WHERE LOVE AWAITS</p>
+        <h2>Our Cherished<br>Venue</h2>
+      </div>
+      <div class="venue-card">
+        <img src="assets/venue-card.png" alt="Opulence Resort, Podumoni, Jorhat, Assam">
+        <a class="venue-link" href="https://maps.app.goo.gl/55ZWTHQc8z7AJvVs8?g_st=iw" target="_blank" rel="noopener" aria-label="Get directions to Opulence Resort"></a>
+      </div>
+    </section>
+
+    <section class="gallery section reveal-section" id="gallery">
+      <div class="section-heading">
+        <p class="eyebrow">A GLIMPSE OF US</p>
+        <h2>Our Beautiful<br>Moments</h2>
+        <img class="divider" src="assets/Divider.png" alt="">
+      </div>
+      <div class="slider" id="gallerySlider" tabindex="0" aria-label="Photo gallery">
+        <div class="slides">
+          <figure class="slide is-active"><img src="assets/Image 1.jpg" alt="Lalit and Muskan walking together"></figure>
+          <figure class="slide"><img src="assets/Image 2.jpg" alt="Lalit and Muskan together"></figure>
+          <figure class="slide"><img src="assets/Image 3.jpg" alt="Lalit and Muskan in Jaipur"></figure>
+          <figure class="slide"><img src="assets/Image 4.jpg" alt="Lalit and Muskan together indoors"></figure>
+          <figure class="slide"><img src="assets/Image 5.jpg" alt="Lalit and Muskan together at a heritage location"></figure>
+          <figure class="slide"><img src="assets/Image 6.jpg" alt="Lalit and Muskan at a celebration"></figure>
+        </div>
+        <button class="slider-btn prev" type="button" aria-label="Previous photo">‹</button>
+        <button class="slider-btn next" type="button" aria-label="Next photo">›</button>
+      </div>
+      <div class="dots" id="galleryDots" aria-label="Gallery slide selection"></div>
+      <p class="gallery-caption">A moment captured in time, forever in our hearts</p>
+    </section>
+
+    <section class="rsvp section reveal-section" id="rsvp">
+      <div class="section-heading">
+        <p class="eyebrow">JOIN THE CELEBRATION</p>
+        <h2>Celebrate With<br>Us</h2>
+        <p class="intro">A few fun questions before the big day!</p>
+      </div>
+
+      <form id="rsvpForm" novalidate>
+        <div class="form-card">
+          <h3>Guest Details</h3>
+          <label for="guestName">Your Name</label>
+          <input id="guestName" name="guestName" type="text" autocomplete="name" placeholder="Full Name" required>
+          <label for="guestPhone">Phone Number</label>
+          <input id="guestPhone" name="guestPhone" type="tel" autocomplete="tel" placeholder="+91 00000 00000" required>
+        </div>
+
+        <fieldset class="form-card choice-card">
+          <legend>Make a Guess</legend>
+          <p>Who will get emotional first</p>
+          <div class="choices guess-choices">
+            <label class="choice-circle"><input type="radio" name="emotional" value="Muskan" required><span>M</span><small>MUSKAN</small></label>
+            <label class="choice-circle"><input type="radio" name="emotional" value="Lalit"><span>L</span><small>LALIT</small></label>
+            <label class="choice-circle"><input type="radio" name="emotional" value="Both"><span>B</span><small>BOTH</small></label>
+          </div>
+          <p class="after-wedding">Reveal after the wedding 😂</p>
+        </fieldset>
+
+        <fieldset class="form-card mood-card">
+          <legend>Your Wedding Mood</legend>
+          <p>I’m coming for...</p>
+          <div class="mood-grid">
+            <label><input type="radio" name="mood" value="The Food 🍨" required><span>The Food 🍨</span></label>
+            <label><input type="radio" name="mood" value="Dance Floor 💃"><span>Dance Floor 💃</span></label>
+            <label><input type="radio" name="mood" value="The Love ❤️"><span>The Love ❤️</span></label>
+            <label><input type="radio" name="mood" value="All of it ✨"><span>All of it ✨</span></label>
+          </div>
+        </fieldset>
+
+        <div class="form-card advice-card">
+          <h3>Words for Forever</h3>
+          <label for="advice">Advice for marriage life</label>
+          <textarea id="advice" name="advice" rows="5" placeholder="One piece of advice..."></textarea>
+        </div>
+
+        <button class="send-love" type="submit">SEND LOVE</button>
+        <p class="form-note" id="formNote" role="status"></p>
+      </form>
+    </section>
+
+    <footer class="footer reveal-section">
+      <img src="assets/footer-card.png" alt="Lalit & Muskan — RSVP — Heartfelt wishes from Lahoty & Singhi Family">
+    </footer>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
